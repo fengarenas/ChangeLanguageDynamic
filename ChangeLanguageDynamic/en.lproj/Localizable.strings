@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ChangeLanguageDynamic
+
+  Created by Fengj on 15/12/31.
+  Copyright © 2015年 DevFeng. All rights reserved.
+*/
+"UserNamePlaceHolder" = "input your username";
+"PassWordPlaceHolder" = "input your password";
+"Login" = "login";
+"ChangeLanguage" = "setting Language";
+
+"English" = "English";
+"Chinese(Traditional)" = "Chinese(Traditional)";
+"Chinese(Simplified)" = "Chinese(Simplified)";
+"cancel" = "cancel";

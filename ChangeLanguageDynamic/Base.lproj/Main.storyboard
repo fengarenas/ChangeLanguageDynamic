@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bz8-kP-utr">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vS-ui-4O9">
+                                <rect key="frame" x="30" y="114" width="260" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8n-DA-ISY">
+                                <rect key="frame" x="30" y="164" width="260" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFg-Gd-1oQ">
+                                <rect key="frame" x="134" y="214" width="52" height="30"/>
+                                <state key="normal" title="button1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-UC-YMj">
+                                <rect key="frame" x="133" y="264" width="54" height="30"/>
+                                <state key="normal" title="button2"/>
+                                <connections>
+                                    <action selector="changeLanguageButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5U-Ca-pMF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="eXH-UC-YMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zg-O6-udg"/>
+                            <constraint firstItem="d8n-DA-ISY" firstAttribute="height" secondItem="8vS-ui-4O9" secondAttribute="height" id="AYU-rx-Rqm"/>
+                            <constraint firstItem="GFg-Gd-1oQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bm3-bF-fTU"/>
+                            <constraint firstItem="d8n-DA-ISY" firstAttribute="width" secondItem="8vS-ui-4O9" secondAttribute="width" id="HmI-bF-6hC"/>
+                            <constraint firstItem="8vS-ui-4O9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="JVN-I9-zOY"/>
+                            <constraint firstItem="d8n-DA-ISY" firstAttribute="top" secondItem="8vS-ui-4O9" secondAttribute="bottom" constant="20" id="R4O-v7-xe1"/>
+                            <constraint firstItem="GFg-Gd-1oQ" firstAttribute="top" secondItem="d8n-DA-ISY" secondAttribute="bottom" constant="20" id="RIe-XK-f7s"/>
+                            <constraint firstItem="d8n-DA-ISY" firstAttribute="leading" secondItem="8vS-ui-4O9" secondAttribute="leading" id="ScB-Wd-dbe"/>
+                            <constraint firstItem="8vS-ui-4O9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="WA6-lz-Nju"/>
+                            <constraint firstItem="eXH-UC-YMj" firstAttribute="top" secondItem="GFg-Gd-1oQ" secondAttribute="bottom" constant="20" id="gol-pZ-Qb8"/>
+                            <constraint firstItem="d8n-DA-ISY" firstAttribute="trailing" secondItem="8vS-ui-4O9" secondAttribute="trailing" id="npC-r7-0cX"/>
+                            <constraint firstAttribute="trailing" secondItem="8vS-ui-4O9" secondAttribute="trailing" constant="30" id="zPW-OI-LaP"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="O6t-Tt-44O" appends="YES" id="eXB-nd-TBT"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="VwE-4W-pYy"/>
+                    <connections>
+                        <outlet property="changeLanguageButton" destination="eXH-UC-YMj" id="CnG-nT-DGS"/>
+                        <outlet property="loginButton" destination="GFg-Gd-1oQ" id="IDp-tX-EsN"/>
+                        <outlet property="passwordTextField" destination="d8n-DA-ISY" id="NEJ-RO-KXy"/>
+                        <outlet property="userNameTextField" destination="8vS-ui-4O9" id="S63-Xh-x7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="O6t-Tt-44O">
+                    <connections>
+                        <action selector="tapGesHandler:" destination="BYZ-38-t0r" id="9S2-ew-5ux"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="479" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ba6-tz-dVW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bz8-kP-utr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kgq-Cd-3QH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UGP-D9-8Uu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ge6-A5-Ac1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="374"/>
+        </scene>
+    </scenes>
+</document>
